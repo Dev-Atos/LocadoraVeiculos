@@ -11,3 +11,8 @@ body{
     border-radius: 30px;
     border-top: 1px solid;
 }
+
+#carouselExampleControls{
+ width: 50%;
+ height: 10px;
+}
