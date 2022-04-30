@@ -70,3 +70,47 @@ body {
 .botao-direita {
     right: -30px;
 }
+
+.barra-pesquisa {
+    background-color: #e40000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.barra-pesquisa h3 {
+    color: white;
+    width: 400px;
+}
+
+.barra-pesquisa h5 {
+    color: white;
+    
+}
+
+.form-select {
+    border-radius: 5px 5px 5px 5px;
+    width: 300px;
+}
+
+.select-pesquisa {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#local-input {
+    width: 300px;
+}
+#data-hora-input {
+    width: 100px;
+}
+
+#botao-buscar input {
+    width: 100%;
+    height: 100%;
+}
+
+.botao {
+    border-radius: 5px;
+}

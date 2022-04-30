@@ -59,6 +59,91 @@
 
   </header>
 
+  <!-- Pesquisa -->
+
+  <div class="container col-12">
+    <div class="barra-pesquisa">
+      <h3>Procure seu veículo:</h2>
+      <form action="">
+
+        
+        <div class="row justify-content-start select-pesquisa">
+          <div class="col-3 align-items-center">
+            <h5>Informações da retirada:</h5>
+          </div>
+          <select class="form-select me-2" id="local-input">
+            <option selected>Selecione a unidade</option>
+            <option value="1">São Miguel</option>
+            <option value="2">São Paulo</option>
+            <option value="3">Guarulhos</option>
+          </select>
+
+          <select class="form-select me-2" id="data-hora-input">
+            <option selected>Data</option>
+            <option value="1">30/05</option>
+            <option value="2">31/05</option>
+            <option value="3">01/06</option>
+          </select>
+
+          <select class="form-select" id="data-hora-input">
+            <option selected>Hora</option>
+            <option value="1">10:00</option>
+            <option value="2">10:30</option>
+            <option value="3">11:00</option>
+          </select>
+
+        </div>
+
+        <div class="row justify-content-start select-pesquisa">
+          <div class="col-3 align-items-center">
+            <h5>Informações da devolução:</h5>
+          </div>
+
+          <select class="form-select me-2 local-input">
+            <option selected>Selecione a unidade</option>
+            <option value="1">São Miguel</option>
+            <option value="2">São Paulo</option>
+            <option value="3">Guarulhos</option>
+          </select>
+
+          <!-- <select class="form-select me-2" id="data-hora-input">
+            <option selected>Data</option>
+            <option value="1">30/05</option>
+            <option value="2">31/05</option>
+            <option value="3">01/06</option>
+          </select> -->
+          <div class="container">
+            <div class="row">
+               <div class='col-sm-6'>
+                  <input type='text' class="form-control" id='datetimepicker4' />
+               </div>
+               <script type="text/javascript">
+                  $(function () {
+                      $('#datetimepicker4').datetimepicker();
+                  });
+               </script>
+            </div>
+         </div>
+
+          <select class="form-select me-2" id="data-hora-input">
+            <option selected>Hora</option>
+            <option value="1">10:00</option>
+            <option value="2">10:30</option>
+            <option value="3">11:00</option>
+          </select>
+
+          <div class="col-3" id="botao-buscar">
+            <input class="btn-light botao" type="submit" value="Buscar Veículo">
+          </div>
+          
+
+        </div>
+        
+      </form>
+
+    </div>
+  </div>
+
   <!-- Carousel Principal -->
 
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
