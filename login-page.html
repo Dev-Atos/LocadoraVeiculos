@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redditus</title>
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/login-page.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <!-- <div class="d-flex justify-content-between align-items-center topo">
+            <img src="img/Redditus.png" alt="Redditus Logo" class="redditus-logo">
+            <a href="login-page.html" class="login-button">
+                <img src="img/user.png" alt="user-logo" class="user-logo">
+                Login
+            </a>
+        </div> -->
+
+        <nav class="navbar navbar-expand-lg" style="background-color: #e5e5e5;">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-around" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link menuNav" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link menuNav" href="#">Carros</a>
+                        <a class="nav-link menuNav" href="#">Ofertas</a>
+                        <a class="nav-link menuNav" href="#">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="d-flex justify-content-center flex-column container login-area">
+        <div class="row titulo mb-4">
+            <h4>Acesse sua conta:</h3>
+        </div>
+
+        <div class="row">
+            <form action="">
+                <div class="row mb-2">
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="CPF">
+                </div>
+                <div class="row mb-4">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                </div>
+
+                <div class="row mb-4">
+                    <button type="submit" class="btn btn-light">Entrar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="row separator">
+            Ou:
+        </div>
+
+        <div class="row criar-conta">
+            <button type="button" class="btn btn-light">Crie sua Conta</button>
+        </div>
+
+    </div>
+
+    <footer class="row row-cols-3 py-5 mt-5 w-100 mx-0 rodape">
+
+
+        <div class="col">
+            <h5>Contate-nos</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                    <a class="rodape-text" href="https://wa.me/5511912345678" target="_blank">
+                    <img src="img/icons/whatsapp.png" class="icon" alt="">
+                    +55 (11) 91234 5678</a></li>
+                <li class="nav-item mb-2">
+                    <img src="img/icons/chamada-telefonica.png" class="icon" alt="">
+                    <a>+55 (11) 8765 4321</p></li>
+                <li class="nav-item mb-2">
+                    <img src="img/icons/email.png" class="icon" alt="">
+                    <a>redditus@locadora.com</a></li>
+            </ul>
+        </div>
+
+        <div class="col">
+            <h5>Endereço Principal</h5>
+            <ul class="nav flex-column">
+                <li class="row nav-item mb-2">
+                    <a class="rodape-text" href="https://goo.gl/maps/8go4o9rW3W2B2b6B8" target="_blank">
+                    <img src="img/icons/gps.png" class="icon" alt="">
+                    Onde Judas perdeu as Botas, 1573 - Bairro Qualquer - São Paulo | CEP: 09806-293</a></li>
+            </ul>
+        </div>
+
+        <div class="col">
+            <h5>Redes Sociais</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                    <a href="https://www.facebook.com/periclesfaria" target="_blank">
+                        <img src="img/icons/facebook.png" class="icon" alt="">
+                        @LocadoraRedditus</a></li>
+                <li class="nav-item mb-2">
+                    <a href="https://www.instagram.com/cristiano/" target="_blank">
+                        <img src="img/icons/instagram.png" class="icon" alt="">
+                        @LocadoraRedditus</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
