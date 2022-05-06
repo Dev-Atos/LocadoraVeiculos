@@ -167,6 +167,7 @@ body {
     background-color: white;
     width: 36rem;
     padding: 12px;
+    border-radius: 25px;
 }
 
 .botao-esquerda, .botao-direita {

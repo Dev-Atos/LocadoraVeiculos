@@ -1,5 +1,5 @@
 .card {
-    width: 23%;
+    width: 100%;
     padding: 0;
     border-radius: 25px;
     transition: 0.2s;
@@ -14,8 +14,8 @@
 }
 
 .card img {
-    width: 100%;
-    height: 160px;
+    width: 45%;
+    height: 20%;
     border-radius: 0px;
 }
 
@@ -24,19 +24,19 @@
 }
 
 .btn {
-    background-color: #FF8F28;
+    background-color: #f00;
     display: flex;
     width: 75%;
     font-size: 20px;
     margin: auto;
-    align-items: center;
     justify-content: center;
     border-radius: 20px;
     color: white;
+    margin-bottom: 10px;
 }
 
 .btn:hover {
-    background-color: #cf6400;
+    background-color: #c00;
 }
 
 .card-title {
@@ -54,4 +54,19 @@
     font-size: 35px;
     margin-left: 10px;
     width: fit-content;
+}
+.car-info {
+    margin-right: 20px;
+    width: 100%;
+    padding: 20px 60px 20px 20px;
+    color: black;
+}
+.car-info h3, .car-info h5 {
+    text-align: end;
+}
+.car-info h3 {
+    font-size: 40px;
+}
+.car-info h5 {
+    font-size: 28px;
 }
