@@ -30,16 +30,15 @@
 </head>
 
 <body>
-
   <header class="cabecalho">
     <div class="d-flex justify-content-between align-items-center topo">
-      <img src="img/Redditus.png" alt="Redditus Logo" class="redditus-logo">
-      <a href="login-page.html" class="login-button">
-        <img src="img/user.png" alt="user-logo" class="user-logo">
-        Login
-      </a>
+      <image src="img/Redditus.png" alt="Redditus Logo" class="redditus-logo">
+        <a href="login.html" class="login-button">
+          <img src="img/user.png" alt="user-logo" class="user-logo">
+          Login
+        </a>
     </div>
-
+  
     <nav class="navbar navbar-expand-lg" style="background-color: #e5e5e5;">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -48,92 +47,81 @@
         </button>
         <div class="collapse navbar-collapse justify-content-around" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link menuNav" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link menuNav" aria-current="page" href="#">Home</a>
             <a class="nav-link menuNav" href="#">Carros</a>
-            <a class="nav-link menuNav" href="#">Ofertas</a>
+            <a class="nav-link menuNav" href="#">Unidades</a>
             <a class="nav-link menuNav" href="#">Saiba Mais</a>
           </div>
         </div>
       </div>
     </nav>
-
+  
   </header>
-
-  <!-- Pesquisa -->
-
+  
   <div class="container col-12">
     <div class="barra-pesquisa">
       <h3>Procure seu veículo:</h2>
-      <form action="">
-
-        
-        <div class="row justify-content-start select-pesquisa">
-          <div class="col-3 align-items-center">
-            <h5>Informações da retirada:</h5>
+        <form action="">
+  
+  
+          <div class="row justify-content-start select-pesquisa">
+            <div class="col-3 align-items-center">
+              <h5>Informações da retirada:</h5>
+            </div>
+            <select class="form-select me-2" id="local-input">
+              <option selected>Selecione a unidade</option>
+              <option value="1">São Miguel</option>
+              <option value="2">São Paulo</option>
+              <option value="3">Guarulhos</option>
+            </select>
+  
+            <input type="date" class='form-control me-2 data-input' placeholder="aa">
+  
+            <select class="form-select me-2 hora-input">
+              <option selected>Hora</option>
+              <option value="1">10:00</option>
+              <option value="2">10:30</option>
+              <option value="3">11:00</option>
+            </select>
+  
           </div>
-          <select class="form-select me-2" id="local-input">
-            <option selected>Selecione a unidade</option>
-            <option value="1">São Miguel</option>
-            <option value="2">São Paulo</option>
-            <option value="3">Guarulhos</option>
-          </select>
-
-          <select class="form-select me-2" id="data-hora-input">
-            <option selected>Data</option>
-            <option value="1">30/05</option>
-            <option value="2">31/05</option>
-            <option value="3">01/06</option>
-          </select>
-
-          <select class="form-select" id="data-hora-input">
-            <option selected>Hora</option>
-            <option value="1">10:00</option>
-            <option value="2">10:30</option>
-            <option value="3">11:00</option>
-          </select>
-
-        </div>
-
-        <div class="row justify-content-start select-pesquisa">
-          <div class="col-3 align-items-center">
-            <h5>Informações da devolução:</h5>
+  
+          <div class="row justify-content-start select-pesquisa">
+            <div class="col-3 align-items-center">
+              <h5>Informações da devolução:</h5>
+            </div>
+  
+            <select class="form-select me-2 local-input">
+              <option selected>Selecione a unidade</option>
+              <option value="1">São Miguel</option>
+              <option value="2">São Paulo</option>
+              <option value="3">Guarulhos</option>
+            </select>
+  
+            <input type="date" class='form-control me-2 data-input'>
+  
+  
+            <select class="form-select me-2 hora-input">
+              <option selected>Hora</option>
+              <option value="1">10:00</option>
+              <option value="2">10:30</option>
+              <option value="3">11:00</option>
+            </select>
+  
+            <div class="col-2" id="botao-buscar">
+              <input class="btn-light botao" type="submit" value="Buscar Veículo">
+            </div>
+  
+  
           </div>
-
-          <select class="form-select me-2 local-input">
-            <option selected>Selecione a unidade</option>
-            <option value="1">São Miguel</option>
-            <option value="2">São Paulo</option>
-            <option value="3">Guarulhos</option>
-          </select>
-
-          <select class="form-select me-2" id="data-hora-input">
-            <option selected>Data</option>
-            <option value="1">30/05</option>
-            <option value="2">31/05</option>
-            <option value="3">01/06</option>
-          </select>
-
-          <select class="form-select me-2" id="data-hora-input">
-            <option selected>Hora</option>
-            <option value="1">10:00</option>
-            <option value="2">10:30</option>
-            <option value="3">11:00</option>
-          </select>
-
-          <div class="col-3" id="botao-buscar">
-            <input class="btn-light botao" type="submit" value="Buscar Veículo">
-          </div>
-          
-
-        </div>
-        
-      </form>
-
+  
+        </form>
+  
     </div>
   </div>
-
+  
   <!-- Carousel Principal -->
-
+  
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -154,132 +142,134 @@
         <img src="img/carousel3.png" class="d-block w-100" alt="...">
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
+  
   <!-- Cards -->
-
+  
+  <h1 class="mt-5 mb-0 text-center">Nossas Unidades</h1>
   <section class="cards-carousel d-flex align-items-center">
-
+  
     <div id="carouselExampleControls" class="carousel slide card-carousel carousel-dark" data-bs-ride="carousel">
-
+  
       <div class="carousel-inner">
-
+  
         <div class="carousel-item active justify-content-evenly">
-
+  
           <div class="carros row justify-content-evenly">
-
-            <div class="card col-3" style="width: 18rem;">
-              <img src="img/fiatuno.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+  
+            <div class="card col-6">
+              <div class="row align-items-center">
+                <div class="col-4">
+                  <img src="img/unidades/unidade1.jpg" class="card-img-top" alt="...">
+                </div>
+  
+                <div class="card-body col-8">
+                  <h2 class="card-title">Unidade 1</h5>
+                    <p class="card-text">Onde Judas perdeu as Botas, 1573 - Bairro Qualquer - São Paulo | CEP: 09806-293
+                    </p>
+                </div>
               </div>
             </div>
-
-            <div class="card col-3" style="width: 18rem;">
-              <img src="img/fiatuno.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+  
+            <div class="card col-6">
+              <div class="row align-items-center">
+                <div class="col-4">
+                  <img src="img/unidades/unidade2.jpg" class="card-img-top" alt="...">
+                </div>
+  
+                <div class="card-body col-8">
+                  <h2 class="card-title">Unidade 2</h5>
+                    <p class="card-text">Onde Judas perdeu as Botas, 1573 - Bairro Qualquer - São Paulo | CEP: 09806-293
+                    </p>
+                </div>
               </div>
             </div>
-
-            <div class="card col-3" style="width: 18rem;">
-              <img src="img/fiatuno.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-              </div>
-            </div>
-
+  
+  
           </div>
-
+  
         </div>
-
+  
         <div class="carousel-item justify-content-evenly">
-
+  
           <div class="carros row justify-content-evenly">
-
-            <div class="card col-3" style="width: 18rem;">
-              <img src="img/fiatuno.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+  
+            <div class="card col-6">
+              <div class="row align-items-center">
+                <div class="col-4">
+                  <img src="img/unidades/unidade3.jpg" class="card-img-top" alt="...">
+                </div>
+  
+                <div class="card-body col-8">
+                  <h2 class="card-title">Unidade 3</h5>
+                    <p class="card-text">Onde Judas perdeu as Botas, 1573 - Bairro Qualquer - São Paulo | CEP: 09806-293
+                    </p>
+                </div>
               </div>
             </div>
-
-            <div class="card col-3" style="width: 18rem;">
-              <img src="img/fiatuno.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+  
+            <div class="card col-6">
+              <div class="row align-items-center">
+                <div class="col-4">
+                  <img src="img/unidades/unidade4.jpg" class="card-img-top" alt="...">
+                </div>
+  
+                <div class="card-body col-8">
+                  <h2 class="card-title">Unidade 4</h5>
+                    <p class="card-text">Onde Judas perdeu as Botas, 1573 - Bairro Qualquer - São Paulo | CEP: 09806-293
+                    </p>
+                </div>
               </div>
             </div>
-
-            <div class="card col-3" style="width: 18rem;">
-              <img src="img/fiatuno.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-              </div>
-            </div>
-
+  
           </div>
-
+  
         </div>
-
+  
+  
         <div class="carousel-item justify-content-evenly">
-
+  
           <div class="carros row justify-content-evenly">
-
-            <div class="card col-3" style="width: 18rem;">
-              <img src="img/fiatuno.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+  
+            <div class="card col-6">
+              <div class="row align-items-center">
+                <div class="col-4">
+                  <img src="img/unidades/unidade5.jpg" class="card-img-top" alt="...">
+                </div>
+  
+                <div class="card-body col-8">
+                  <h2 class="card-title">Unidade 5</h5>
+                    <p class="card-text">Onde Judas perdeu as Botas, 1573 - Bairro Qualquer - São Paulo | CEP: 09806-293
+                    </p>
+                </div>
               </div>
             </div>
-
-            <div class="card col-3" style="width: 18rem;">
-              <img src="img/fiatuno.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>                
+  
+            <div class="card col-6">
+              <div class="row align-items-center">
+                <div class="col-4">
+                  <img src="img/unidades/unidade6.jpg" class="card-img-top" alt="...">
+                </div>
+  
+                <div class="card-body col-8">
+                  <h2 class="card-title">Unidade 6</h5>
+                    <p class="card-text">Onde Judas perdeu as Botas, 1573 - Bairro Qualquer - São Paulo | CEP: 09806-293
+                    </p>
+                </div>
               </div>
             </div>
-
-            <div class="card col-3" style="width: 18rem;">
-              <img src="img/fiatuno.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>                
-              </div>
-            </div>
-
           </div>
-
         </div>
       </div>
-
+  
       <button class="carousel-control-prev botao-esquerda" type="button" data-bs-target="#carouselExampleControls"
         data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -291,54 +281,52 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
   </section>
+  
+  <footer class="row row-cols-3 py-5 mt-5 w-100 mx-0 rodape">
 
-<!-- Rodapé -->
-<footer class="row row-cols-3 py-5 mt-5 w-100 mx-0 rodape">
 
-
-  <div class="col">
-      <h5>Contate-nos</h5>
+    <div class="col">
+        <h5>Contate-nos</h5>
+        <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+                <a class="rodape-text" href="https://wa.me/5511912345678" target="_blank">
+                <img src="img/icons/whatsapp.png" class="icon" alt="">
+                +55 (11) 91234 5678</a></li>
+            <li class="nav-item mb-2">
+                <img src="img/icons/chamada-telefonica.png" class="icon" alt="">
+                <a>+55 (11) 8765 4321</p></li>
+            <li class="nav-item mb-2">
+                <img src="img/icons/email.png" class="icon" alt="">
+                <a>redditus@locadora.com</a></li>
+        </ul>
+    </div>
+  
+    <div class="col">
+        <h5>Endereço Principal</h5>
+        <ul class="nav flex-column">
+            <li class="row nav-item mb-2">
+                <a class="rodape-text" href="https://goo.gl/maps/8go4o9rW3W2B2b6B8" target="_blank">
+                <img src="img/icons/gps.png" class="icon" alt="">
+                Onde Judas perdeu as Botas, 1573 - Bairro Qualquer - São Paulo | CEP: 09806-293</a></li>
+        </ul>
+    </div>
+  
+    <div class="col">
+      <h5>Redes Sociais</h5>
       <ul class="nav flex-column">
           <li class="nav-item mb-2">
-              <a class="rodape-text" href="https://wa.me/5511912345678" target="_blank">
-              <img src="img/icons/whatsapp.png" class="icon" alt="">
-              +55 (11) 91234 5678</a></li>
+              <a href="https://www.facebook.com/periclesfaria" target="_blank">
+                  <img src="img/icons/facebook.png" class="icon" alt="">
+                  @LocadoraRedditus</a></li>
           <li class="nav-item mb-2">
-              <img src="img/icons/chamada-telefonica.png" class="icon" alt="">
-              <a>+55 (11) 8765 4321</p></li>
-          <li class="nav-item mb-2">
-              <img src="img/icons/email.png" class="icon" alt="">
-              <a>redditus@locadora.com</a></li>
+              <a href="https://www.instagram.com/cristiano/" target="_blank">
+                  <img src="img/icons/instagram.png" class="icon" alt="">
+                  @LocadoraRedditus</a></li>
       </ul>
   </div>
-
-  <div class="col">
-      <h5>Endereço Principal</h5>
-      <ul class="nav flex-column">
-          <li class="row nav-item mb-2">
-              <a class="rodape-text" href="https://goo.gl/maps/8go4o9rW3W2B2b6B8" target="_blank">
-              <img src="img/icons/gps.png" class="icon" alt="">
-              Onde Judas perdeu as Botas, 1573 - Bairro Qualquer - São Paulo | CEP: 09806-293</a></li>
-      </ul>
-  </div>
-
-  <div class="col">
-    <h5>Redes Sociais</h5>
-    <ul class="nav flex-column">
-        <li class="nav-item mb-2">
-            <a href="https://www.facebook.com/periclesfaria" target="_blank">
-                <img src="img/icons/facebook.png" class="icon" alt="">
-                @LocadoraRedditus</a></li>
-        <li class="nav-item mb-2">
-            <a href="https://www.instagram.com/cristiano/" target="_blank">
-                <img src="img/icons/instagram.png" class="icon" alt="">
-                @LocadoraRedditus</a></li>
-    </ul>
-</div>
-
-</footer>
+  
+  </footer>
 
   <script src="js/script.js"></script>
 </body>

@@ -4,7 +4,6 @@
 
 body {
     background-color: #e5e5e5;
-    overflow-x: hidden; 
 }
 
 .topo {
@@ -53,12 +52,24 @@ body {
     background-color: red;
 }
 
-
+.card-carousel {
+    background-color: white;
+    width: 100%;
+    background-color: #e5e5e5;
+    height: 500px;
+    margin-top: 30px;
+}
 
 .user-logo {
     width: 35px;
 }
 
+.botao-esquerda {
+    left: -30px;
+}
+.botao-direita {
+    right: -30px;
+}
 
 .barra-pesquisa {
     background-color: #e40000;
@@ -91,10 +102,7 @@ body {
 #local-input {
     width: 300px;
 }
-.data-input {
-    width: 200px;
-}
-.hora-input {
+#data-hora-input {
     width: 100px;
 }
 
@@ -105,73 +113,4 @@ body {
 
 .botao {
     border-radius: 5px;
-}
-
-/* Rodapé */
-
-.rodape {
-    background-color: white;
-    /* box-sizing: ; */
-}
-
-.rodape h5 {
-    color: black;
-    font-weight: 700;
-    font-size: x-large;
-    text-align: center;
-}
-.rodape a, p{
-    color: #000;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    transition: 0.1s;
-}
-
-.rodape a:hover,.rodape p:hover {
-    font-weight: 600;
-}
-
-.rodape li {
-    margin: auto;
-}
-
-.icon {
-    width: 30px;
-    height: 30px;
-}
-
-
-
-/* Carousel de cards */
-
-.card-img-top {
-    width: 180px;
-    border-radius: 100px;
-}
-
-.card-carousel {
-    background-color: white;
-    width: 100%;
-    background-color: #e5e5e5;
-    height: fit-content;
-    margin-top: 30px;
-}
-.card {
-    background-color: white;
-    width: 36rem;
-    padding: 12px;
-}
-
-.botao-esquerda, .botao-direita {
-    width: 3rem;
-}
-.card-title {
-    width: fit-content;
-    line-height: 100%;
-    vertical-align: middle;
-}
-.card-text {
-    text-align: start;
 }

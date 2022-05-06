@@ -1,5 +1,5 @@
 body {
-    background-image: url(/img/car-bg.png);
+    background-image: url(../img/car-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -65,3 +65,12 @@ body {
 
 /* Rodapé */
 
+.voltar {
+    color: white;
+    width: fit-content;
+    margin: 0;
+}
+.voltar:hover {
+    color: white;
+    border-bottom: solid 4px #fff;
+}
