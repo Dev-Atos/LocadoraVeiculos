@@ -35,10 +35,22 @@
       <a href="index.html">
         <image src="img/Redditus.png" alt="Redditus Logo" class="redditus-logo">
       </a>
-        <a href="login.html" class="login-button">
-          <img src="img/user.png" alt="user-logo" class="user-logo">
-          Login
-        </a>
+      <div class="profile">
+        <div class="dropdown">
+          <a class="btn btn-light dropdown-toggle text-center" href="#" role="button" id="dropdownMenuLink"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="img/user.png" alt="user-logo" class="user-logo">José Neves
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="perfil.html">Perfil</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="/logout">Sair</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   
     <nav class="navbar navbar-expand-lg" style="background-color: #e5e5e5;">
@@ -70,19 +82,50 @@
               <h5>Informações da retirada:</h5>
             </div>
             <select class="form-select me-2" id="local-input">
-              <option selected>Selecione a unidade</option>
-              <option value="1">São Miguel</option>
-              <option value="2">São Paulo</option>
-              <option value="3">Guarulhos</option>
+              <option value="">Selecione a unidade</option>
+            <option value="1">São Miguel</option>
+            <option value="2">São Paulo</option>
+            <option value="3">Guarulhos</option>
+            <option value="4">Campinas</option>
+            <option value="5">São José dos Campos</option>
+            <option value="6">Santo André</option>
+            <option value="7">Ribeirão Preto</option>
+            <option value="8">Sorocaba</option>
+            <option value="9">Santos</option>
+            <option value="10">Suzano</option>
+            <option value="11">Piracicaba</option>
+            <option value="12">Osasco</option>
+            <option value="13">Barueri</option>
+            <option value="14">Rio de Janeiro</option>
+            <option value="15">Belo Horizonte</option>
             </select>
   
             <input type="date" class='form-control me-2 data-input' placeholder="aa">
   
             <select class="form-select me-2 hora-input">
-              <option selected>Hora</option>
-              <option value="1">10:00</option>
-              <option value="2">10:30</option>
-              <option value="3">11:00</option>
+              <option value="">Hora</option>
+            <option value="1">08:00</option>
+            <option value="2">08:30</option>
+            <option value="3">09:00</option>
+            <option value="4">09:30</option>
+            <option value="4">10:00</option>
+            <option value="4">10:30</option>
+            <option value="4">11:00</option>
+            <option value="4">11:30</option>
+            <option value="4">12:00</option>
+            <option value="4">12:30</option>
+            <option value="4">13:00</option>
+            <option value="4">13:30</option>
+            <option value="4">14:00</option>
+            <option value="4">14:30</option>
+            <option value="4">15:00</option>
+            <option value="4">15:30</option>
+            <option value="4">16:00</option>
+            <option value="4">16:30</option>
+            <option value="4">17:00</option>
+            <option value="4">17:30</option>
+            <option value="4">18:00</option>
+            <option value="4">18:30</option>
             </select>
   
           </div>

@@ -1,0 +1,40 @@
+.profile {
+    background-color: white;
+    padding: 25px;
+}
+.profile img {
+    width: 12rem;
+    height: 12rem;
+}
+.nome {
+    margin: auto;
+}
+
+.nome h1 {
+    font-size: 3rem;
+}
+
+.reservas {
+    border: 2px solid red;
+    background-color: white;
+    border-radius: 15px;
+    width: 98%;
+    margin: auto;
+    padding: 2px;
+}
+
+.reserva {
+    background-color: white;
+    width: 95%;
+    margin: auto;
+    border-bottom: 1px solid gray;
+}
+
+.item {
+    padding: 0;
+    margin: auto;
+}
+
+.titulo {
+    font-weight: 700;
+}
